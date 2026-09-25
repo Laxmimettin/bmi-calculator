@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-circle circle-one"></div>
+    <div class="background-circle circle-two"></div>
+
+    <main class="container">
+
+        <section class="bmi-card">
+
+            <div class="header">
+                <div class="icon">⚖️</div>
+                <div>
+                    <p class="tag">HEALTH TOOL</p>
+                    <h1>BMI Calculator</h1>
+                    <p class="subtitle">
+                        Calculate your Body Mass Index quickly and easily.
+                    </p>
+                </div>
+            </div>
+
+            <form id="bmiForm">
+
+                <div class="input-group">
+                    <label for="height">Height</label>
+
+                    <div class="input-wrapper">
+                        <input type="number" id="height" placeholder="Enter your height" step="0.1" min="1">
+                        <span>cm</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="weight">Weight</label>
+
+                    <div class="input-wrapper">
+                        <input type="number" id="weight" placeholder="Enter your weight" step="0.1" min="1">
+                        <span>kg</span>
+                    </div>
+                </div>
+
+                <p id="errorMessage" class="error-message"></p>
+
+                <button type="submit" class="calculate-btn">
+                    Calculate BMI
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <div id="result" class="result">
+
+                <p class="result-label">YOUR BMI</p>
+
+                <div class="bmi-value">
+                    <span id="bmiValue">--</span>
+                </div>
+
+                <div id="category" class="category">
+                    Enter your details
+                </div>
+
+                <p id="message" class="result-message">
+                    Your BMI result will appear here.
+                </p>
+
+                <div class="scale">
+
+                    <div class="scale-bar">
+                        <div class="marker" id="marker"></div>
+                    </div>
+
+                    <div class="scale-labels">
+                        <span>Underweight</span>
+                        <span>Normal</span>
+                        <span>Overweight</span>
+                        <span>Obese</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="info">
+                <span>ℹ️</span>
+                <p>
+                    BMI is calculated using your weight and height.
+                    It is a general screening measure and does not
+                    diagnose individual health conditions.
+                </p>
+            </div>
+
+        </section>
+
+        <footer>
+            Built with HTML • CSS • JavaScript
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
